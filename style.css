@@ -160,7 +160,7 @@ main {
 }
 .profile-container figure {
   align-items: flex-start;
-  background-color: red;
+  background-color: #f85b2b;
   border-bottom: 2px solid black;
   display: flex;
   grid-column: 1 / end;

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
+
+* {
+  border: none;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+main {
+  align-items: center;
+  background-color: #05c6ad;
+  border-radius: 2px;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  padding: 1em;
+  width: 400px;
+}
+.main-container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 13% 7% 10% 15% 45% 10%;
+  height: calc(100% - 1em);
+}
+.main-title {
+  align-self: end;
+  font-weight: 600;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.main-name {
+  font-size: 2em;
+  font-weight: 800;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.search-container {
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 1px black;
+  display: inline-flex;
+  flex: 1 1 300px;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  margin: 0.7em 0;
+  overflow: hidden;
+  padding-right: 1em;
+  position: relative;
+  top: -10px;
+}
+.search-container i {
+  align-self: center;
+  font-size: 1.5rem;
+}
+.search-container i::before {
+  font-weight: 100;
+}
+.search-container input {
+  border: 0;
+  flex: 1;
+  font-size: 1.2em;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.star-container {
+  display: grid;
+  grid-column: 2 / end;
+  gap: 0 5%;
+  grid-row: 4 / 5;
+  grid-template-columns: repeat(7, 10%);
+  grid-template-rows: 60% 40%;
+  overflow: hidden;
+}
+.star-item {
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 30%;
+  box-shadow: 0 2px 1px black;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  margin: 0.1em;
+}
+.star-container p {
+  font-size: 0.8em;
+  font-weight: 800;
+  padding: 0 10px;
+  text-align: center;
+}
+.star-item--1 {
+  background-color: #fff4cd;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+.star-item--1 i:nth-child(1) {
+  color: #ffbd11;
+}
+.star-title--1 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / end;
+}
+.star-item--2 {
+  background-color: #ffe8e9;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+}
+.star-item--2 i:nth-child(1) {
+  color: #f85b2b;
+}
+.star-title--2 {
+  grid-column: 3 / span 2;
+  grid-row: 2 / end;
+}
+.star-item--3 {
+  background-color: #d5fcf7;
+  grid-column: 5 / span 2;
+  grid-row: 1 / span 1;
+}
+.star-item--3 i:nth-child(1) {
+  color: #04c6ad;
+}
+.star-title--3 {
+  grid-column: 5 / span 2;
+  grid-row: 2 / end;
+}
+.star-item--4 {
+  background-color: #fff4cd;
+  grid-column: 7 / span 2;
+  grid-row: 1 / span 1;
+}
+.star-item--4 i:nth-child(1) {
+  color: #e9bf2e;
+}
+.star-title--4 {
+  grid-column: 7 / span 2;
+  grid-row: 2 / end;
+}
+.profile-container {
+  border: 2px solid black;
+  border-radius: 10%;
+  box-shadow: 0 7px 1px black;
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  grid-template-columns: 10% 60% 30%;
+  grid-template-rows: 60% 15% repeat(2, 12.5%);
+  margin-top: 5%;
+  overflow: hidden;
+}
+.profile-container figure {
+  align-items: flex-start;
+  background-color: red;
+  border-bottom: 2px solid black;
+  display: flex;
+  grid-column: 1 / end;
+  grid-row: 1 / 2;
+  justify-content: center;
+  overflow: hidden;
+}
+.profile-image {
+  border-bottom: 2px solid black;
+  max-width: 85%;
+  object-fit: cover;
+  position: relative;
+  top: 10%;
+}
+.profile-container h1 {
+  align-self: center;
+  font-size: 1.5em;
+  font-weight: 800;
+  grid-column: 2 / end;
+  grid-row: 2 / 3;
+}
+.profile-item--1 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.profile-item--2 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+.profile-star {
+  align-items: center;
+  align-self: start;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: 0 3px 1px black;
+  display: flex;
+  font-size: 1.5em;
+  grid-column: 3 / end;
+  grid-row: 3 / end;
+  height: 60px;
+  justify-content: center;
+  justify-self: center;
+  width: 60px;
+}
+.menu-container {
+  align-items: center;
+  align-self: center;
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 6 / end;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+.menu-container i {
+  font-size: 1.6em;
+}

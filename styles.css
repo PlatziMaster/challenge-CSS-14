@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-columns: 5% 90% 5%;
   grid-template-rows: 6% 8% 6% 20% 40% 10%;   
-  border: 1px solid red;
+  /* border: 1px solid red; */
   row-gap: 5px;  
 }
 .main-title{  
@@ -39,31 +39,34 @@ body {
 }
 
 .grid-hijo-1{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   background-color:white;
   grid-row: 4 / 4;
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 30% 70%;  
-  padding-top: 8px;
+  padding-top: 8px;  
 }
 .grid-hijo-2{
-  border: 1px solid yellow;
+  border: 1px solid black;
+  border-radius: 10px;
   background-color:white;
   grid-row: 5 / 5;  
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 2% 1fr 2%;
   grid-template-rows: repeat(4, 1fr);
+  
 }
 .grid-hijo-3{  
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-row: 6 / 6;  
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
+  margin-top: 20px;
 }
 
 .item-1{
@@ -94,7 +97,6 @@ body {
   grid-row: 2 / end;
   grid-column: 2 / 2;
   padding: 7px
-
 }
 
 .item-3{
@@ -123,12 +125,12 @@ body {
 
 .start-title--4{
   grid-row: 2 / end;
-  grid-column: 4 / 4;
-   
+  grid-column: 4 / 4;   
 }
 
 .band{
-  width: 266px;
+  padding-top: 5px ;
+  width: 255px;
   height: 140px;
 }
 
@@ -159,4 +161,23 @@ h1{
   margin:0;
   padding: 0;
   margin-top: 4px;
+}
+
+.footer-left{
+  grid-row: 1 / 1;
+  grid-column: 1 / 1; 
+}
+.footer-right1{
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;   
+}
+
+.footer-right2{
+  grid-row: 1 / 1;
+  grid-column: 3 / 3;   
+}
+
+.footer-right3{
+  grid-row: 1 / 1;
+  grid-column: 4 / 4;   
 }

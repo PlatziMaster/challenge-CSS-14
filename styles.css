@@ -26,18 +26,6 @@ body {
   grid-row: 2 / 2;
   grid-column: 2 / 2 ;
 }
-.search-container{  
-  grid-row: 3 / 3;
-  grid-column: 2 / 2;
-  padding: 10px ;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 1px solid black;  
-  /* box-shadow: desplazamiento horizontal desplazamiento vertical desenfoque extension color inset; */
-  box-shadow: 0px 2px 0px 0px black;
-  color: black;
-
-}
 
 .grid-hijo-1{  
   background-color:white;
@@ -56,7 +44,7 @@ body {
   grid-row: 5 / 5;  
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 2% 1fr 2%;
+  grid-template-columns: 2% 67% 29% 2%;
   grid-template-rows: repeat(4, 1fr);
   
 }
@@ -79,12 +67,13 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
 }
 
 .start-title--1{
   grid-row: 2 / 2;
   grid-column: 1 / 1;  
-  padding: 7px
+  padding: 7px;  
 }
 
 .item-2{
@@ -94,6 +83,7 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
 }
 
 .start-title--2{
@@ -109,6 +99,7 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
 }
 
 .start-title--3{
@@ -124,11 +115,13 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
 }
 
 .start-title--4{
   grid-row: 2 / end;
-  grid-column: 4 / 4;   
+  grid-column: 4 / 4; 
+  padding: 7px  
 }
 
 .band{
@@ -191,4 +184,45 @@ h1{
 
 .material-icons{
   vertical-align: -8px;  
+}
+
+.Rate{
+  grid-row: 2 / 2;
+  grid-column: 3 / 3;
+  justify-self: center;
+  align-self: center;
+}
+
+
+.grid-hijo-0{    
+  grid-row: 3 / 3;
+  grid-column: 2 / 2; 
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr;
+
+}
+.search-text{
+  grid-row: 1 / 1;
+  grid-column: 1 / 1; 
+  padding: 10px ;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid black;  
+  /* box-shadow: desplazamiento horizontal desplazamiento vertical desenfoque extension color inset; */
+  box-shadow: 0px 2px 0px 0px black;
+  color: black;
+}
+
+.search-icon{
+    grid-row: 1 / 1;
+    grid-column: 2 / 2; 
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    grid-row: 3 / 3;
+    grid-column: 3 / 3;
 }

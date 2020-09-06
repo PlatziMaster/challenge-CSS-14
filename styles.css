@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 256px;
+  height: 625px; 
+}
+.grid-padre{
+  padding: 0;
+  border: 8px solid #05C6AD;
+  background-color: white;
+  width: 296px;
+  height: 625px;  
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 6% 8% 6% 20% 40% 10%;
+  row-gap: 5px;  
+}
+.main-title{  
+  font-weight: 600px;
+  grid-row: 1 / 1;
+  grid-column: 2 / 2 ;  
+}
+.main-name{
+  font-size: 2em;
+  font-weight: 600px;
+  grid-row: 2 / 2;
+  grid-column: 2 / 2 ;  
+}
+.grid-hijo-1{    
+  grid-row: 3 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;  
+  
+}
+
+.grid-hijo-2{  
+  background-color:white;
+  grid-row: 4 / 4;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30% 70%;  
+  padding-top: 8px;  
+}
+.grid-hijo-3{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color:white;
+  box-shadow: 0px 5px 0px 0px black;
+  grid-row: 5 / 5;  
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 2% 67% 29% 2%;
+  grid-template-rows: repeat(4, 1fr);
+  
+}
+.grid-hijo-4{  
+  /* border: 1px solid green; */
+  grid-row: 6 / 6;  
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+  justify-self: center;
+  column-gap: 10px;
+}
+
+.item-1{
+  grid-row: 1 / 1;  
+  grid-column: 1 / 1;
+  background-color: #FFF4CD;
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
+}
+
+.start-title--1{
+  grid-row: 2 / 2;
+  grid-column: 1 / 1;  
+  padding: 7px;  
+}
+
+.item-2{
+  grid-row: 1 / 1;  
+  grid-column: 2 / 2;
+  background-color: #FFE8E9;
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
+}
+
+.start-title--2{
+  grid-row: 2 / end;
+  grid-column: 2 / 2;
+  padding: 7px
+}
+
+.item-3{
+  grid-row: 1 / 1;  
+  grid-column: 3 / 3;
+  background-color: #D5FCF7;
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
+}
+
+.start-title--3{
+  grid-row: 2 / end;
+  grid-column: 3 / 3;
+  padding: 7px
+}
+
+.item-4{
+  grid-row: 1 / 1;  
+  grid-column: 4 / 4;  
+  background-color: #FFF4CD;
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 0px 0px black;
+}
+
+.start-title--4{
+  grid-row: 2 / end;
+  grid-column: 4 / 4; 
+  padding: 7px  
+}
+
+.band{
+  padding-top: 5px ;
+  width: 255px;
+  height: 140px;
+}
+
+.profile{  
+  grid-row: 2 / 2;
+  grid-column: 2 / 2; 
+  margin:0;
+  padding: 0;  
+}
+
+.site-presentation{
+  grid-row: 2 / 2;
+  grid-column: 2 / 2; 
+  margin:0;
+  padding: 0;
+  font-size: 0.8em;
+}
+.date-presentation{
+  grid-row: 3 / 3;
+  grid-column: 2 / 2; 
+  margin:0;
+  padding: 0;
+  margin-top: 4px;
+  font-size: 0.8em;
+}
+
+h1{
+  margin:0;
+  padding: 0;
+  margin-top: 4px;
+}
+
+.footer-left{
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;   
+  background-color: #EEEFF5;
+  border-radius: 10px;
+  width: 70px;
+  height: 25px;    
+}
+.footer-right1{
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;   
+}
+
+.footer-right2{
+  grid-row: 1 / 1;
+  grid-column: 3 / 3;   
+}
+
+.footer-right3{
+  grid-row: 1 / 1;
+  grid-column: 4 / 4;   
+}
+
+.material-icons{
+  vertical-align: -8px;  
+}
+
+.Rate{
+  grid-row: 2 / 2;
+  grid-column: 3 / 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.search-text{
+  /* grid-row: 1 / 3;
+  grid-column: 1 / 2; 
+  padding: 10px ;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid black;  
+  box-shadow: desplazamiento horizontal desplazamiento vertical desenfoque extension color inset; 
+  box-shadow: 0px 2px 0px 0px black;
+  color: black; */
+    width: 200px;
+    height: 30px;
+    padding-left: 10px ;
+    border-radius: 10px;
+    border: 1px solid black;  
+    box-shadow: 0px 2px 0px 0px black;    
+}
+
+.search-icon{
+    /* grid-row: 2 / 2;
+    grid-column: 2 / 2; 
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;     */
+
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+    padding-right: 100px;
+}
